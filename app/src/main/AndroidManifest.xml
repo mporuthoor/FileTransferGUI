@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.filetransfergui">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@mipmap/ft_gui_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FileTransferGUI"
+        android:allowBackup="false">
+        <activity
+            android:name=".ViewIPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecvFileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SendFileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EnterIPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SelectFileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
