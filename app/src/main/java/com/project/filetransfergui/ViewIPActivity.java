@@ -1,4 +1,4 @@
-package com.example.filetransfergui;
+package com.project.filetransfergui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -45,7 +45,7 @@ public class ViewIPActivity extends AppCompatActivity {
                 CommonUtility.setSocket(socket);
                 startSendFileActivityFromMainThread();
             } catch (IOException e) {
-                runOnUiThread(() -> Toast.makeText(getApplicationContext(),"Connection Failed", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(getApplicationContext(), "Connection Failed", Toast.LENGTH_SHORT).show());
             }
         });
         socketThread.start();
@@ -54,7 +54,7 @@ public class ViewIPActivity extends AppCompatActivity {
     private void startSendFileActivityFromMainThread() {
         Handler handler = new Handler(Looper.getMainLooper());
         handler.post(() -> {
-            Intent intent = new Intent (getApplicationContext(), SendFileActivity.class);
+            Intent intent = new Intent(getApplicationContext(), SendFileActivity.class);
             startActivity(intent);
         });
     }

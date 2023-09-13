@@ -1,6 +1,4 @@
-package com.example.filetransfergui;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.project.filetransfergui;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -8,6 +6,8 @@ import android.os.ParcelFileDescriptor;
 import android.os.SystemClock;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
@@ -72,8 +72,8 @@ public class SendFileActivity extends AppCompatActivity {
                         output.write(buffer, 0, bytesRead);
                         sizeRemaining -= bytesRead;
 
-                        double temp = (fileSize-sizeRemaining)/(double) fileSize * 100;
-                        runOnUiThread(() -> sendPercentView.setText(String.format(Locale.US,"%." + 1 + "f", temp) + "% Complete"));
+                        double temp = (fileSize - sizeRemaining) / (double) fileSize * 100;
+                        runOnUiThread(() -> sendPercentView.setText(String.format(Locale.US, "%." + 1 + "f", temp) + "% Complete"));
                     }
 
                     output.flush();
@@ -83,16 +83,16 @@ public class SendFileActivity extends AppCompatActivity {
                 socket.close();
             } catch (UnknownHostException unknownHostException) {
                 unknownHostException.printStackTrace();
-                runOnUiThread(() -> Toast.makeText(getApplicationContext(),"Failed to Connect", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(getApplicationContext(), "Failed to Connect", Toast.LENGTH_SHORT).show());
             } catch (SocketException socketException) {
                 socketException.printStackTrace();
-                runOnUiThread(() -> Toast.makeText(getApplicationContext(),"Connection Error", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(getApplicationContext(), "Connection Error", Toast.LENGTH_SHORT).show());
             } catch (FileNotFoundException fileNotFoundException) {
                 fileNotFoundException.printStackTrace();
-                runOnUiThread(() -> Toast.makeText(getApplicationContext(),"Error Creating File", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(getApplicationContext(), "Error Creating File", Toast.LENGTH_SHORT).show());
             } catch (IOException ioException) {
                 ioException.printStackTrace();
-                runOnUiThread(() -> Toast.makeText(getApplicationContext(),"Error Receiving/Writing Data", Toast.LENGTH_SHORT).show());
+                runOnUiThread(() -> Toast.makeText(getApplicationContext(), "Error Receiving/Writing Data", Toast.LENGTH_SHORT).show());
             }
 
             SystemClock.sleep(3000);

@@ -5,13 +5,13 @@
       <map>
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.32037037037037036" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32037037037037036" />
-        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_enter_ip.xml" value="0.33" />
+        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_enter_ip.xml" value="0.5" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_enter_ipactivity.xml" value="0.5" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_pick_file.xml" value="0.33" />
-        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_recv_file.xml" value="0.5" />
-        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_select_file.xml" value="0.17566409597257926" />
-        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_send_file.xml" value="0.2" />
+        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_recv_file.xml" value="0.2" />
+        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_select_file.xml" value="0.5" />
+        <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_send_file.xml" value="0.5" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_show_progress.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_view_ip.xml" value="0.33" />
         <entry key="..\:/Users/Manx/AndroidStudioProjects/FileTransferGUI/app/src/main/res/layout/activity_view_ipactivity.xml" value="0.5541666666666667" />

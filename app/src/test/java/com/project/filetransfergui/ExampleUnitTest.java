@@ -1,4 +1,4 @@
-package com.example.filetransfergui;
+package com.project.filetransfergui;
 
 import org.junit.Test;
 

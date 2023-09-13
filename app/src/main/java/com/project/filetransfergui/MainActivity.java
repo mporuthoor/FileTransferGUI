@@ -1,4 +1,4 @@
-package com.example.filetransfergui;
+package com.project.filetransfergui;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
