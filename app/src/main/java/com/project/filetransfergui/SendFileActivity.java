@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.Socket;
@@ -56,7 +55,7 @@ public class SendFileActivity extends AppCompatActivity {
                     output.writeUTF(FileUtility.getCurrentFileName() + "\\_()_/" + fileSize);
                     output.flush();
 
-                    FileInputStream input = new FileInputStream(descriptor.getFileDescriptor());
+                    ParcelFileDescriptor.AutoCloseInputStream input = new ParcelFileDescriptor.AutoCloseInputStream(descriptor);
                     int fileNumber = i + 1;
                     runOnUiThread(() -> {
                         if (numFiles > 1) {
